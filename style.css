@@ -1,0 +1,199 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo-image {
+    padding-right: 20px;
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 33.5px 375px 31.5px 375.79px;
+    background: rgba(16, 16, 29, 0.9); 
+    position: relative; 
+    z-index: 1; 
+}
+
+.header_container ul li {
+    display: inline-block;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 13px;
+    margin-right: 60px;
+}
+
+.nav-main {
+    color: #43ABF0;
+}
+
+.nav {
+    color: white;
+}
+
+.intro {
+    background-image: url(/public/images/background1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    width: 1919px;
+    height: 987px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 0; 
+}
+
+.intro_content {
+    padding-top: 100px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.intro h1 {
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.highlight {
+    color: rgba(62, 156, 220, 1);
+}
+
+.intro_info {
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 30px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 100px;
+}
+
+.intro_info h3 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.intro_info p {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.button-container {
+    margin-top: 100px;
+    display: flex;
+    gap: 30px;
+}
+
+.button-primary,
+.button-secondary {
+    width: 183px;
+    height: 43px;
+    padding: 15px 10px;
+    gap: 10px;
+    border-radius: 4px 4px 4px 4px;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: initial;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.button-primary {
+    background-color: #007bb5;
+    color: white;
+}
+
+.button-secondary {
+    background-color: white;
+    color: black;
+    border: 1px solid rgba(111, 109, 123, 1);
+}
+
+.button-primary:hover {
+    background-color: #00628f;
+}
+
+.button-secondary:hover {
+    background-color: #c5c5c5;
+}
+
+/* Стили для нового раздела */
+.order {
+    position: relative;
+    background-image: linear-gradient(rgba(39, 39, 51, 1), rgba(39, 39, 51, 1)), url(/public/images/background2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    min-height: 100vh;
+    z-index: 0;
+}
+
+.order::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(39, 39, 51, 1);
+    z-index: 1;
+    opacity: 0.8; /* Можно настроить прозрачность */
+}
+
+.order_content {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.order h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.order p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer {
+    padding: 20px 0;
+    background-color: #10101d;
+    color: white;
+    text-align: center;
+    margin-top: auto;
+}
